@@ -68,7 +68,7 @@ export default function HomePage() {
                     ))}
                   </div>
                   <div className="cerita-side-image">
-                    <img src="/Gambar/Pria solo (2).jpg" alt="Sejarah Restoran" />
+                    <img src="/ProjectUAS_DapurSolo/Gambar/Pria solo (2).jpg" alt="Sejarah Restoran" />
                   </div>
                 </div>
 

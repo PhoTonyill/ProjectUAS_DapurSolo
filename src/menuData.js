@@ -5,7 +5,7 @@
 //
 // Catatan: baru 3 foto yang tersedia (Makanan 1-3), jadi menu baru memakai foto
 // itu sementara. Ganti lewat Admin > Manajemen Menu > Edit.
-const FOTO = ['/Gambar/Makanan 1.png', '/Gambar/Makanan 2.png', '/Gambar/Makanan 3.png'];
+const FOTO = ['/ProjectUAS_DapurSolo/Gambar/Makanan 1.png', '/ProjectUAS_DapurSolo/Gambar/Makanan 2.png', '/ProjectUAS_DapurSolo/Gambar/Makanan 3.png'];
 
 export const MENU_ITEMS = [
   // ---------------------------------------------------------------- MAKANAN

@@ -6,7 +6,7 @@ const isDataUrl = (value) => typeof value === 'string' && value.startsWith('data
 
 /**
  * Input gambar dengan dua cara: unggah file (disimulasikan, disimpan sebagai
- * data URL di memori) atau tempel URL / path (mis. /Gambar/foto.png).
+ * data URL di memori) atau tempel URL / path (mis. /ProjectUAS_DapurSolo/Gambar/foto.png).
  * Menampilkan pratinjau.
  */
 export default function ImageInput({
@@ -88,7 +88,7 @@ export default function ImageInput({
             key="input-url"
             type="text"
             inputMode="url"
-            placeholder="https://contoh.com/foto.jpg atau /Gambar/foto.png"
+            placeholder="https://contoh.com/foto.jpg atau /ProjectUAS_DapurSolo/Gambar/foto.png"
             value={isDataUrl(value) ? '' : value || ''}
             onChange={(e) => {
               setFileError('');
@@ -97,7 +97,7 @@ export default function ImageInput({
             isInvalid={Boolean(shownError)}
           />
           <Form.Text muted>
-            Path seperti <code>/Gambar/foto.png</code> merujuk ke folder{' '}
+            Path seperti <code>/ProjectUAS_DapurSolo/Gambar/foto.png</code> merujuk ke folder{' '}
             <code>public</code>.
           </Form.Text>
         </>

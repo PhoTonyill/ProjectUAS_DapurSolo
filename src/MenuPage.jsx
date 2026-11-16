@@ -20,7 +20,7 @@ export default function MenuPage({ cart }) {
               {items.map((item) => (
                 <Col key={item.id}>
                   <Card className="menu-pick-card h-100">
-                    <Card.Img variant="top" src={item.image || '/Gambar/Makanan 1.png'} alt={item.name} />
+                    <Card.Img variant="top" src={item.image || '/ProjectUAS_DapurSolo/Gambar/Makanan 1.png'} alt={item.name} />
                     <div className="menu-pick-content">
                       <div className="menu-pick-heading"><h3>{item.name}</h3><span>{formatRupiah(item.price)}</span></div>
                       <p>{item.description}</p>

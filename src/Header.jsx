@@ -60,7 +60,7 @@ export default function Header({ cartCount }) {
     <>
       <header>
         <div className="brand-area">
-          <img src="/Gambar/Jokowi Makan.png" alt="Logo Restoran" />
+          <img src="/ProjectUAS_DapurSolo/Gambar/Jokowi Makan.png" alt="Logo Restoran" />
           <h1 className="menu-title">Restoran Pria Solo</h1>
           <div className="brand-title">RASANYA SUSAH DILAWAN!</div>
         </div>

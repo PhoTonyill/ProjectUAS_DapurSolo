@@ -20,10 +20,10 @@ export const initialMenus = MENU_ITEMS.map((item) => ({
 }));
 
 export const initialGallery = [
-  { id: 'g1', title: 'Suasana Restoran Pria Solo', src: '/Gambar/Pria solo (2).jpg' },
-  { id: 'g2', title: 'Hidangan khas 1', src: '/Gambar/Makanan 1.png' },
-  { id: 'g3', title: 'Hidangan khas 2', src: '/Gambar/Makanan 2.png' },
-  { id: 'g4', title: 'Hidangan khas 3', src: '/Gambar/Makanan 3.png' },
+  { id: 'g1', title: 'Suasana Restoran Pria Solo', src: '/ProjectUAS_DapurSolo/Gambar/Pria solo (2).jpg' },
+  { id: 'g2', title: 'Hidangan khas 1', src: '/ProjectUAS_DapurSolo/Gambar/Makanan 1.png' },
+  { id: 'g3', title: 'Hidangan khas 2', src: '/ProjectUAS_DapurSolo/Gambar/Makanan 2.png' },
+  { id: 'g4', title: 'Hidangan khas 3', src: '/ProjectUAS_DapurSolo/Gambar/Makanan 3.png' },
 ];
 
 // Isi awal sama dengan teks di HomePage (bagian Cerita Kami & Kontak).
