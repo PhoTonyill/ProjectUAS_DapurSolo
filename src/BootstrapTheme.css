@@ -1,0 +1,180 @@
+/*
+  Penyesuaian Bootstrap agar tampilannya tetap memakai tema merah-krem restoran.
+  File ini dimuat SETELAH DesainUMKM.css, jadi aturan di sini yang menang.
+*/
+
+/* ---------- Tombol tema restoran ---------- */
+.btn-resto {
+  --bs-btn-color: #fffdf0;
+  --bs-btn-bg: #942929;
+  --bs-btn-border-color: #942929;
+  --bs-btn-hover-color: #fffdf0;
+  --bs-btn-hover-bg: #791f1f;
+  --bs-btn-hover-border-color: #791f1f;
+  --bs-btn-active-color: #fffdf0;
+  --bs-btn-active-bg: #791f1f;
+  --bs-btn-active-border-color: #791f1f;
+  --bs-btn-focus-shadow-rgb: 201, 138, 64;
+  min-height: 44px;
+  font-weight: 700;
+}
+
+.btn-outline-resto {
+  --bs-btn-color: #942929;
+  --bs-btn-bg: #fffdf0;
+  --bs-btn-border-color: #942929;
+  --bs-btn-hover-color: #fffdf0;
+  --bs-btn-hover-bg: #942929;
+  --bs-btn-hover-border-color: #942929;
+  --bs-btn-active-color: #fffdf0;
+  --bs-btn-active-bg: #791f1f;
+  --bs-btn-active-border-color: #791f1f;
+  --bs-btn-focus-shadow-rgb: 201, 138, 64;
+  min-height: 44px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ---------- Badge ---------- */
+.badge-resto {
+  background: #942929;
+  color: #fff;
+}
+
+.badge-ordered {
+  background: #eff8e9;
+  color: #315a2b;
+  font-size: 0.8rem;
+}
+
+/* ---------- Navbar ---------- */
+header .navbar {
+  width: 100%;
+  justify-content: center;
+}
+
+header .navbar-collapse {
+  justify-content: center;
+}
+
+header .navbar-nav {
+  gap: clamp(6px, 3vw, 40px);
+}
+
+header .navbar-nav .nav-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 8px 2px;
+  border-bottom: 2px solid transparent;
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link.active,
+header .navbar-nav .nav-link.show {
+  border-bottom-color: #942929;
+  color: #942929;
+}
+
+.nav-toggler {
+  border-color: #942929;
+}
+
+.nav-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(201, 138, 64, 0.35);
+}
+
+header .dropdown-menu {
+  min-width: 190px;
+  padding: 8px;
+  border: 1px solid #eadfb4;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(67, 38, 19, 0.16);
+}
+
+header .dropdown-item {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  color: #555;
+}
+
+header .dropdown-item:hover,
+header .dropdown-item:focus {
+  background: #fff5d5;
+  color: #942929;
+}
+
+@media (max-width: 767.98px) {
+  header .navbar-nav {
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.split-section {
+  display: block;
+}
+
+.hero-panel {
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-panel .panel-order-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 8px 10px;
+  border: 0;
+  color: #942929;
+  text-decoration: none;
+}
+
+/* ---------- Kartu pilihan menu ---------- */
+.menu-picks-grid.row {
+  display: flex;
+  gap: 0;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu-pick-card {
+  border-radius: 14px;
+}
+
+.menu-pick-card .card-img-top {
+  height: 190px;
+  object-fit: cover;
+}
+
+.menu-pick-card .btn-resto {
+  border-radius: 9px;
+}
+
+/* ---------- Tabel menu ---------- */
+.table-wrapper .table {
+  --bs-table-bg: transparent;
+  --bs-table-hover-bg: #fdf2c2;
+  --bs-table-border-color: #e2d9a8;
+  width: 100%;
+  font-size: 0.88rem;
+}
+
+.table-wrapper .table > :not(caption) > * > * {
+  padding: 9px 11px;
+}
+
+/* ---------- Kontak ---------- */
+.contact-card.card {
+  border: 0;
+  border-top: 5px solid #942929;
+  border-radius: 12px;
+}

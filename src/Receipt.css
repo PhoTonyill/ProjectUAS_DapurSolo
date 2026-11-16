@@ -1,0 +1,148 @@
+.receipt-page {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 40px 16px 56px;
+}
+
+.receipt-thanks {
+  margin: 0 0 20px;
+  color: #942929;
+  text-align: center;
+}
+
+.receipt {
+  padding: 26px 24px 22px;
+  border: 1px solid #eadfb4;
+  border-radius: 6px;
+  background: #fffdf0;
+  box-shadow: 0 8px 22px rgba(67, 38, 19, 0.12);
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.92rem;
+  text-align: left;
+}
+
+.receipt-brand {
+  text-align: center;
+}
+
+.receipt-name {
+  color: #942929;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.receipt-tagline {
+  font-size: 0.8rem;
+  color: #6a6255;
+}
+
+.receipt-rule {
+  margin: 14px 0;
+  border: 0;
+  border-top: 2px dashed #c9bd88;
+  opacity: 1;
+}
+
+.receipt-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 14px;
+  margin: 0;
+}
+
+.receipt-meta dt {
+  color: #6a6255;
+  font-weight: 400;
+}
+
+.receipt-meta dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.receipt-id {
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.receipt-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.receipt-items li + li {
+  margin-top: 10px;
+}
+
+.receipt-item-name {
+  font-weight: 700;
+}
+
+.receipt-item-line,
+.receipt-total-row,
+.receipt-status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.receipt-grand {
+  margin-top: 6px;
+  color: #942929;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.receipt-status {
+  font-weight: 800;
+}
+
+.receipt-status.is-pending {
+  color: #8a5a1f;
+}
+
+.receipt-status.is-done {
+  color: #1f6a3d;
+}
+
+.receipt-foot {
+  margin: 18px 0 0;
+  color: #6a6255;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.receipt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+@media print {
+  header,
+  footer,
+  .nav-feedback,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .receipt-page {
+    padding: 0;
+  }
+
+  .receipt {
+    border: 0;
+    box-shadow: none;
+  }
+}
